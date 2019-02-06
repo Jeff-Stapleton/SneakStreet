@@ -36,7 +36,7 @@ public:
 	void Unequip();
 
 	UPROPERTY()
-	AXLCharacter* Character;
+	class AXLCharacter* Character;
 
 	UPROPERTY(EditDefaultsOnly, Category = Mesh)
 	USkeletalMeshComponent* Mesh3P;

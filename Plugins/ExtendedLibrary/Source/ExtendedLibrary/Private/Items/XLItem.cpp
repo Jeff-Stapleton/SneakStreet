@@ -171,10 +171,10 @@ void AXLItem::DetachMeshFromPawn()
 	Mesh3P->SetHiddenInGame(true);
 }
 
-void AXLItem::StartEquip(AXLCharacter* Character, FName AttachPoint)
+void AXLItem::StartEquip(class AXLCharacter* character, FName attachPoint)
 {
-	this->Character = Character;
-	this->AttachPoint = AttachPoint;
+	this->Character = character;
+	this->AttachPoint = attachPoint;
 	AttachMeshToPawn();
 
 	float Duration = 0.0f;// PlayWeaponAnimation(EquipAnim);
